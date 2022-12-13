@@ -1,0 +1,1329 @@
+body {
+  background-color: #b6d3d7;
+  font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+}
+#Logo {
+  height: auto;
+  width: auto;
+  max-width: 8%;
+  max-height: 8%;
+  object-fit: contain;
+  margin-right: 70px;
+}
+#footer {
+    background-color: #333333;
+    height: 80px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    z-index: 1;
+    bottom: 0em;
+}
+#Header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+nav{
+  background: white;
+  border-radius: 50px;
+  padding: 1px;
+  box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+}
+nav a{
+  text-decoration: none;
+  color: #464878;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 30px;
+  margin: 4px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #777;
+  cursor:pointer;
+  position: relative;
+  z-index: 2;
+  transition: color 0.5s;
+
+}
+nav ul li::after{
+  content: '';
+  background:#c3e1e5;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+  transition: top 0.5s, opacity 0.5s;
+}
+nav ul li:hover::after{
+  top: 50%;
+  opacity:1;
+}
+#Pink-Nav ul li::after{
+  content: '';
+  background:#ffdfe4;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+  transition: top 0.5s, opacity 0.5s;
+}
+
+#Pink-Nav ul li:hover::after{
+  top: 50%;
+  opacity:1;
+}
+#footer #instagram_icon {
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+}
+#footer h6 {
+    color: #FFFFFF;
+    font-size: medium;
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+    font-weight: 600;
+    width: auto;
+    height: auto;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-left: 7px;
+}
+/*The container for the sqears*/
+#Bmain{
+    height: 100%;
+    width: 100%;
+}
+
+/*The first text in the page*/
+#Bfirst_text{
+  font-size: 5em;
+ font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+  font-weight: bold;
+  position: absolute;
+  left: 1.5em;
+  top: 3em;
+  color: #464878;
+}
+
+#Bcheckbox_container{
+    height: 100em;
+    width: 80em;
+    position: absolute;
+    top: 34em;
+    width: 85em;
+    align-items: center;
+    justify-content: center;
+}
+
+/*the label and the checkboxs*/
+
+#Binput[type="checkbox"]{
+  height: 40px;
+  width: 40px;
+  background-color: #faeccf;
+  border-radius: 8px;
+  appearance: none;
+  -webkit-appearance: none;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.Blabel{
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  line-height: 0;
+  color: white;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#Binput[type="checkbox"]:after{
+  font-family: "Font Awesome 5 Free";
+  content: "\e069";
+  font-size: 20px;
+  font-weight: 900;
+  color:#464878;
+  display: none;
+}
+
+#Binput[type="checkbox"]:hover{
+  background-color: c8c0ae;
+}
+
+#Binput[type="checkbox"]:checked{
+  background-color: white;
+}
+
+#Binput[type="checkbox"]:checked::after{
+  display: block;
+}
+
+
+/*The checkboxs postioning*/
+#Bmain_image{
+  position: absolute;
+  top: 16em;
+}
+#Bcontainer{
+    margin: 0 auto;
+    padding-top: 10em;
+    z-index: 2;
+}
+/*#Bgrid{
+  z-index: 1;
+  height: 120em;
+}
+*/
+.Blist{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+}
+
+#Bcheckbox1{
+  height: 20em;
+  width: 20em;
+  position: absolute;
+  left: 11.5em;
+  top: 5em;
+}
+#Bcheckbox2{
+  height: 20em;
+  width: 20em;
+  position: absolute;
+  left: 48em;
+  bottom: 81em;
+}
+#Bcheckbox3{
+  height: 20em;
+  width: 20em;
+  position: absolute;
+  left: 40em;
+  top: 33em;
+}
+#Bcheckbox4{
+  height: 20em;
+  width: 20em;
+  position: absolute;
+  left: 53em;
+  top: 33em;
+}
+#Bcheckbox5{
+  height: 20em;
+  width: 20em;
+  position: absolute;
+  left: 10em;
+  top: 41em;
+}
+#BPILLOW{
+  position: absolute;
+  left: 4.3em;
+  top: 1.15em;
+  color: white;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#Bcheckbox6{
+  height: 20em;
+  width: 20em;
+  position: absolute;
+  left: 8em;
+  top: 61em;
+}
+#Bcheckbox7{
+  height: 20em;
+  width: 20em;
+  position: absolute;
+  left: 29em;
+  top: 61em;
+}
+#Bcheckbox8{
+  height: 20em;
+  width: 20em;
+  position: absolute;
+  left: 59em;
+  top: 80em;
+}
+
+#Bbottom_text{
+    position: absolute;
+    left: 2em;
+    top: 44.9em;
+    width: 31em;
+    font-size: 1.75em;
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+    font-weight: bold;
+    text-align: justify;
+}
+
+#Bimg1{
+  position: absolute;
+  top: 15.6em;
+}
+/*Noora page*/
+#Nmain{
+  height: 180em;
+}
+
+#Nfirst_text{
+  color: #464878;
+  height: 6.5em;
+  text-align: center;
+  padding-top:4em ;
+  font-size: 1.5em;
+text-decoration: none;
+  
+
+}
+#Nnow_button{
+    height: 3em;
+    padding-top: 1em;
+	padding-bottom: 1em;
+    background-color: #FFFFFF;
+    border-radius: 5em;
+    margin: 0 auto;
+    width: 15em;
+    text-align: center;
+    
+}
+#Ntext-now{
+    color: #f16b6d;
+    font-size: 2.5em;
+    font-weight: bold;
+	
+}
+
+#Nanimation{
+    height: 14em;
+}
+#Nwhite_part{
+    height: 83em;
+    background-color: white;
+    background-image: url(images/grid2.png);
+    background-repeat: repeat;
+}
+#Nnowback{
+  height: 5em;
+  width: 18em;
+  border-radius: 40px;
+  background-color: white;
+}
+#Nwt{
+  background-color: white;
+  height: 70px;
+  width: 340px;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 1.7em;
+  color: #f16b6d;
+}
+#Ngridpic{
+ width: 90.5em;
+}
+#Npart_two_text{
+  color: #f16b6d;
+  text-align: center;
+  padding-top: 1em;
+  font-size: 2.7em;
+}
+#Nlocations{
+    margin: 0 auto;
+    height: 35em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 50px;
+    column-gap: 30px;
+}
+#Nitaly{
+    float: left;
+    height: 30em;
+    width: 25em;
+    padding-top: 5.5em;
+}
+#Nlondon{
+  float: left;
+  height: 30em;
+  width: 25em;
+  padding-top: 2em;
+}
+#Nturkey{
+  float: left;
+  height: 30em;
+  width: 25em;
+}
+#Nnames{
+    height: 10em;
+    width: 70em;
+    position: absolute;
+    left: 8em;
+    top: 90em;
+}
+#Nnames_table td{
+    font-size: 3.3em;
+    text-align: center;
+    color: #464878;
+    font-weight: bold;
+    padding-left: 2em;
+    padding-right: 2.3em;
+}
+
+#Npart2_text1{
+    height: 10em;
+}
+#Npart2_text2{
+    height: 4em;
+    padding-left: 3em;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+#Npurple_button{
+  padding-left: 4em;
+}
+#Npurple{
+  height: 3.3em;
+  width: 15em;
+  border-radius: 45px;
+  background-color: #d1cfe6;
+  text-align: center;
+}
+#Nhere_text{
+  font-size: 2.3em;
+  font-weight: bold;
+  padding-top: 5px;
+  color: #b0abeb;
+}
+#Nlast{
+    height: 45em;
+}
+#Nlastp{
+    width: 100%;
+    height: 100%;
+}
+.Ninputone{
+    height: 3em;
+    width: 25em;
+    border-radius: 40px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#Nsubmit_button{
+  margin-left: 6em;
+  height: 4em;
+  width: 11em;
+}
+#Nbutton{
+    height: 3.5em;
+    width: 8em;
+	background-color: white;
+    font-size: 1.3em;
+    color: #f16b6d;
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+    border: none;
+    border-radius: 5em;
+    font-weight: 600;
+}
+#Nsubtext{
+  font-size: 1.6em;
+  padding-top: 1.3em;
+  padding-left: 1.9em;
+  color: #f16b6d;
+}
+#Nlast_text{
+    height: 30em;
+    width: 45em;
+    position: absolute;
+    right: 2em;
+    top: 123em;
+}
+#Nlast_h1{
+  font-size: 2.4em;
+  color: #f16b6d;
+  height: 2.8em;
+}
+#Nlast_paragraph{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#Nallinput_new{
+    height: 33em;
+    width: 30em;
+    position: absolute;
+    left: 7em;
+    top: 128em;
+    border-radius: 20px;
+    background-color: #b6d3d7;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#Nallinput_new::before{
+  content: '';
+  position: absolute;
+  height: 33em;
+  width: 30em;
+  background: linear-gradient(0deg,transparent, #f16b6d,#f16b6d);
+  transform-origin: bottom right;
+  top: -50%;
+  left: -50%;
+  animation: animate 6s linear infinite;
+  
+}
+#Nallinput_new::after{
+  content: '';
+  position: absolute;
+  height: 33em;
+  width: 30em;
+  background: linear-gradient(0deg,transparent, #f16b6d,#f16b6d);
+  transform-origin: bottom right;
+  top: -50%;
+  left: -50%;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+
+@keyframes animate
+{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  100%
+  {
+    transform: rotate(360deg);
+  }
+}
+#Nallinput_newtext{
+  position: absolute;
+  inset: 3px;
+  background: #c0dde0;
+  z-index: 10;
+  border-radius: 20px;
+  padding: 2em; 
+  line-height: 3em;
+  font-size: 1.2em;
+  color: #464878;
+}
+#Nform input{
+  width: 100%;
+  height: 2em;
+  font-size: 1em;
+}
+
+#Nform_button{
+  padding-top: 2em;
+  padding-left: 6em;
+}
+#NLast-Button{
+  height: 3em;
+  width: 11em;
+  border-radius: 45px;
+  background-color: #464878;
+  color: white;
+}
+#NLast-Button:active{
+  background-color: #f16b6d;
+
+}
+
+#N-errorMsg{
+	color: #f16b6d;
+  position: absolute;
+  left: 14em;
+  top: 129em;
+  z-index: 20000;
+}
+
+
+#N-linkToDest{
+	text-decoration: none;
+}
+
+/*
+#Nlinke-adjust{
+	text-decoration: 
+}
+*/
+
+
+
+/*Dana part*/
+#Dtitle{
+  font-family:Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif ;
+  font-size: 3.5em;
+  color:#464878;
+  text-align: center;
+  margin-top:1.5em;
+}
+#Dfirst{
+    width: 88em;
+    height: 60em;
+}
+#Ditalypic{
+    position: absolute;
+    width: 39em;
+    height: 56em;
+    padding-top: 2em;
+}
+#Ditalypicture{
+    width: 100%;
+    height: 100%;
+}
+#Ditalytext{
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+    color: #464878;
+    position: absolute;
+    top: 8.5em;
+    left: 8.5em;
+    font-size: 2em;
+}
+#Ditalyflag{
+    position: absolute;
+    top: 19.5em;
+    left: 11em;
+}
+#Ditalyflagpic{
+  width:5em;
+  height:5em;
+}
+#Ditalypargraph{
+    height: 32em;
+    width: 26em;
+    position: absolute;
+    top: 21.5em;
+    left: 5em;
+    font-size: 1.1em;
+    text-align: justify;
+}
+#Dchurch{
+    float: right;
+    position: absolute;
+    right: 20em;
+    top: 30em;
+}
+#Dchurchpic{
+  width: 27em;
+  height: 27em;
+}
+#Dspagetti{
+  float: right;
+  position: absolute;
+  right: 5em;
+  top:56em;
+}
+#Dspagettipic{
+  height: 20em;
+  width: 20em;
+}
+#Dsecond{
+
+  height:60em;
+  width:88em;
+}
+#Dlondonpic{
+  
+    float: right;
+    width: 39em;
+    height: 56em;
+    padding-top: 2em;
+    
+}
+#Dlondonpicture{
+  width: 100%;
+  height: 100%;
+}
+#Dlondontext{
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+    color: #464878;
+    position: absolute;
+    top: 48em;
+    left: 31em;
+    font-size: 2em;
+}
+#Dlondonflag{
+    position: absolute;
+    top: 98.5em;
+    left: 57em;
+}
+#Dlondonflagpic{
+  width:5em;
+  height:5em;
+}
+#Dlondonpargraph{
+    height: 25em;
+    width: 26em;
+    position: absolute;
+    top: 94em;
+    left: 49.5em;
+    font-size: 1.1em;
+    text-align: justify;
+}
+#Dlondoneye{
+    position: absolute;
+    top: 84em;
+    right: 57em;
+}
+#Dlondoneyepic{
+  width: 30em;
+  height:30em;
+}
+#Dlondonbr{
+    position: absolute;
+    top: 106em;
+    right: 32em;
+}
+#Dbigbenpic{
+  width:30em;
+  height:30em;
+}
+#Dthird{
+  height:60em;
+  width:88em;
+}
+#Dturkeytext{
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+    color: #464878;
+    position: absolute;
+    top: 77.5em;
+    left: 7em;
+    font-size: 2em;
+}
+#Dturkeyflag{
+    position: absolute;
+    top: 157.5em;
+    left: 8em;
+}
+#Dturkeyflagpic{
+  width: 5em;
+  height: 5em;
+}
+#Dturkeypicture{
+    width: 100%;
+    height: 100%;
+}
+#Dturkeypargraph{
+    height: 32em;
+    width: 26em;
+    position: absolute;
+    top: 147em;
+    left: 5em;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+#Dtea{
+    position: absolute;
+    top: 148em;
+    left: 50em;
+}
+#Dteapic{
+  width:15em;
+  height:15em;
+  }
+
+#Dsultan{
+  position: absolute;
+  top: 168em;
+  left: 42em;
+}
+#Dsultanpic{
+    height: 25em;
+    width: 35em;
+}
+
+
+
+/*Ali part*/
+#A_FirstHeader{
+    font-size: 5em;
+    padding-top: 2em;
+    color: #464879;
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+    padding-left: 1em;
+}
+/*the body container*/
+#A_BodyContainer{
+  background-color: white;
+  height: 500%;
+  width: 100%;
+}
+/*the container for the first text*/
+#A_FirstText{
+    padding-top: 10em;
+    padding-left: 25%;
+    float: left;
+    width: 75%;
+    text-align: center;
+    background-image: url('images/grid.png');
+    height: 21.5em;
+    background-repeat: repeat;
+    object-fit: cover;
+}
+/*the first paragraph*/
+#A_FirstParagraph{
+    font-size: 2em;
+    position: absolute;
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+    right: 12em;
+    width: auto;
+}
+/*the container for the remaining texts*/
+#A_TextContainer{
+  position: relative;
+  text-align: center;
+}
+/*the second text container*/
+#A_SecondText{
+  position: absolute;
+top: 30%;
+left: 15%;
+}
+/*the second paragraph*/
+#A_SecondParagraph{
+    font-size: 2em;
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+    padding-top: 2em;
+}
+/*the third text container*/
+#A_ThirdText{
+  position: absolute;
+  top: 51%;
+  left: 15%;
+}
+/*the third paragraph*/
+#A_ThirdParagraph{
+    font-size: 2em;
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+    padding-top: 2em;
+}
+/*the fourth text container*/
+#A_FourthText{
+  position: absolute;
+top: 73%;
+left: 15%;
+}
+/*the fourth paragraph*/
+#A_FourthParagraph{
+    font-size: 2em;
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+    padding-top: 1em;
+}
+/*the container for the bottom page*/
+#A_BottomPage{
+  width: 100%;
+  
+}
+/*the second header container*/
+#A_HeaderContainer{
+  width: 50%;
+  float: left;
+  padding-left: 4em;
+  text-align: center;
+}
+/*the second header*/
+#A_SecondHeader{
+  color: #464879;
+  font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+}
+/*the second image container*/
+#A_ImgContainer{
+  width: 50%;
+  float: right;
+}
+/*the second image*/
+#A_SecondImg{
+  width: 70%;
+  float: right;
+  padding-right: 1em;
+  
+}
+/*the button container*/
+#A_ButtonContainer{
+  float: left;
+  padding-left: 15em;
+}
+/*the button*/
+#A_Button{
+  border-radius: 3em;
+  width: 10em;
+  height: 3em;
+  background-color: #d1cfe6;
+  float: left;
+  border: none;
+  color: #464879;
+  font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+cursor: pointer;
+}
+#A-Body{
+    background-color: #d1cfe6;
+    height: 33.5em;
+}
+.NinputTitle {
+    font-size: 1.4em;
+	
+}
+#NhomePic {
+    width: 100%;
+    height: 100%;
+}
+#Dturkeypic {
+    width: 39em;
+    height: 56em;
+}
+#Bbody {
+    height: 165em;
+    background-color: #b6c9d7;
+}
+
+/*Our Story*/
+#Maryam-body{
+  background-color: #b6c9d7;
+  font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+  height: 100em;
+}
+#Maryam-Main 
+{
+  height: 140em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.Maryam-Img
+{
+height: 200px;
+width: 200px;
+filter: invert(99%) sepia(2%) saturate(3062%) hue-rotate(305deg) brightness(105%) contrast(96%);
+}
+.Maryam-Container
+{
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px;
+  font-size: 12px;
+}
+.Maryam-Container .Maryam-Card
+{
+position: relative;
+height: 350px;
+background: #fff;
+display: flex;
+width: 48%;
+margin: 30px 0;
+border-radius: 45px;
+}
+.Maryam-Container .Maryam-Card .Maryam-Imgbox
+{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: #464878;
+z-index: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+transition: 0.5s ease-in-out;
+border-radius: 45px;
+}
+.Maryam-Container .Maryam-Card:hover .Maryam-Imgbox
+{
+width: 222px;
+height: 222px;
+left: -170px;
+top: calc(50% - 75px);
+transition: 0.5s ease-in-out;
+border-radius: 45px;
+}
+.Maryam-Container .Maryam-Card .Maryam-Imgbox::before
+{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+text-align: center;
+font-size: 6em;
+color: rgba(255,255,255, 0.5);
+font-weight: 700;
+}
+.Maryam-Container .Maryam-Card .Maryam-Content
+{
+position: absolute;
+right: 0;
+width: calc(100% - 75px);
+height: 100%;
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.Maryam-Container .Maryam-Card2
+{
+position: relative;
+height: 350px;
+background: #fff;
+display: flex;
+width: 48%;
+margin: 30px 0;
+border-radius: 45px;
+}
+.Maryam-Container .Maryam-Card2 .Maryam-Imgbox
+{
+position: absolute;
+right: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: #464878;
+z-index: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+transition: 0.5s ease-in-out;
+border-radius: 45px;
+}
+.Maryam-Container .Maryam-Card2:hover .Maryam-Imgbox
+{
+width: 222px;
+height: 222px;
+right: -140px;
+top: calc(50% - 75px);
+transition: 0.5s ease-in-out;
+border-radius: 45px;
+}
+.Maryam-Container .Maryam-Card2 .Maryam-Imgbox::before
+{
+position: absolute;
+bottom: 0;
+right: 0;
+width: 100%;
+text-align: center;
+font-size: 6em;
+color: rgba(255,255,255, 0.5);
+font-weight: 700;
+}
+.Maryam-Container .Maryam-Card2 .Maryam-Content2
+{
+position: absolute;
+left: 0;
+width: calc(95% - 75px);
+height: 100%;
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.Maryam-Container .Maryam-CardD
+{
+position: relative;
+height: 400px;
+background: #fff;
+display: flex;
+width: 100%;
+margin: 30px 0;
+border-radius: 45px;
+}
+.Maryam-Container .Maryam-CardD .Maryam-Imgbox
+{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: #464878;
+z-index: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+transition: 0.5s ease-in-out;
+border-radius: 45px;
+}
+.Maryam-Container .Maryam-CardD:hover .Maryam-Imgbox
+{
+width: 222px;
+height: 222px;
+left: -75px;
+}
+.Maryam-Container .Maryam-CardD:hover .Maryam-Imgbox
+{
+width: 444px;
+height: 222px;
+left: calc(200% - 50px);
+top: calc(10% - 150px);
+transition: 0.5s ease-in-out;
+border-radius: 45px;
+
+}
+.Maryam-Container .Maryam-CardD .Maryam-Imgbox::before
+{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+text-align: center;
+font-size: 6em;
+color: rgba(255,255,255, 0.5);
+font-weight: 700;
+}
+.Maryam-Container .Maryam-CardD .Maryam-Content
+{
+position: absolute;
+right: 0;
+width: calc(100% - 75px);
+height: 100%;
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.Maryam-Container .Maryam-CardR
+{
+position: relative;
+height: 450px;
+background: #fff;
+display: flex;
+width: 100%;
+margin: 30px 0;
+border-radius: 45px;
+}
+.Maryam-Container .Maryam-CardR .Maryam-Imgbox
+{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: #464878;
+z-index: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+transition: 0.5s ease-in-out;
+border-radius: 45px;
+}
+
+.Maryam-Container .Maryam-CardR:hover .Maryam-Imgbox
+{
+width: 222px;
+height: 222px;
+left: -75px;
+}
+.Maryam-Container .Maryam-CardR:hover .Maryam-Imgbox
+{
+width: 444px;
+height: 222px;
+left: calc(200% - 50px);
+top: calc(10% - 150px);
+transition: 0.5s ease-in-out;
+border-radius: 45px;
+
+}
+.Maryam-Container .Maryam-CardR .Maryam-Imgbox::before
+{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+text-align: center;
+font-size: 6em;
+color: rgba(255,255,255, 0.5);
+font-weight: 700;
+}
+.Maryam-Container .Maryam-CardR .Maryam-Content
+{
+position: absolute;
+right: 0;
+width: calc(100% - 75px);
+height: 100%;
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#Maryam-page-H {
+  height: 18em;
+  position: absolute;
+  top: 8em;
+  font-size: x-large;
+  color: #464878;
+}
+
+/*making of plane-it page*/
+
+/*this is the main part*/
+
+
+#LmainPart {
+    height: 120em;
+    
+    
+}
+
+#L-container1{
+  
+padding-top: 17em;
+
+padding-left: 12em;
+width: 80%;
+}
+#L-text1 {
+    text-align: justify;
+    position: absolute;
+    top: 26em;
+    width: 70%;
+    height: 40%;
+    font-size: 1em;
+    margin: 0 auto;
+    padding-left: 1.5em;
+}
+
+#L-header1
+{
+  text-align: justify;
+    position: absolute;
+    top: 24em;
+    width: 70%;
+    height: 40%;
+    font-size: 1em;
+    margin: 0 auto;
+    padding-left: 1.5em;
+
+}
+
+#L-box1 {
+    background-color: #FFFFFF;
+    height: 14em;
+    width: 92%;
+    border-radius: 3em;
+}
+
+#L-container2{
+padding-top: 7em;
+padding-left: 12em;
+width: 80%;
+
+}
+
+
+#L-header2{
+  text-align: justify;
+  position: absolute;
+  top: 45em;
+  width: 70%;
+  height: 40%;
+  font-size: 1em;
+  margin: 0 auto;
+  padding-left: 1em;
+}
+#L-text2 {
+  text-align: justify;
+  position: absolute;
+  top: 47em;
+  width: 70%;
+  height: 40%;
+  font-size: 1em;
+  margin: 0 auto;
+  padding-left: 1em;
+}
+
+
+
+#L-box2 {
+  background-color: #FFFFFF;
+    height: 14em; 
+    width: 92%;
+    border-radius: 3em;
+}
+
+
+
+#L-pic1 {
+    width: 10%;
+    height: 50%;
+    text-align: left;
+    position: absolute;
+    top: 25em;
+    left: 13em;
+    object-fit: contain;
+}
+
+
+#Lheader {
+    height: 6em;
+    position: absolute;
+    color: #464878;
+    margin: 0 auto;
+    font-size: x-large;
+    top: 7em;
+    left: auto;
+    right: auto;
+    padding-left: 17em;
+}
+#L-box3{
+  padding-left: 5em;
+}
+.L-Img
+{
+  padding-left: 9em; 
+}
+.L-Padding
+{
+  padding-left: 15em;
+}
+#L-Images1
+{
+  padding-top: 2em;
+}
+#L-Images2
+{
+  padding-top: 2em;
+}
+/*making of plane-it page*/
+
+#userDetails {
+    background-color: #CE2C2F;
+    width: 55%;
+    height: 3em;
+    text-align: right;
+}
+#NuserTable {
+    float: right;
+    color: #FFFFFF;
+    font-size: medium;
+    position: absolute;
+	  right: 3em;
+	  margin-top: 2em;
+}

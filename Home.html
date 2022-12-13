@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>home</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="website icon" type="png" href="images/travelling.png">
+<script type="text/javascript" src="Project.js"></script>
+
+</head>
+
+<!--Nawraa Ahmed 202000019-->
+<!--Ali Annan 201901558-->
+<!--Ali Abdulrasool 202101293-->
+<!--Dana Alaskari 202101334-->
+<!--Maryam Aleskafi 202101800-->
+
+<body onload="printUserDetails()">
+
+<!--The header starts here: It contains 2 divs for the logo and the navbar menu-->
+<div id="Header"> 
+  
+  <!--This is the logo div-->
+  <div id="Logo"> <a href="home.html"> <img src="images/logo.png" width="136" height="79" alt="The blog logo"/> </a> </div>
+  
+  <!--This is the navbar div-->
+  <div id="Navbar">
+    <nav>
+      <ul>
+        <li><a href="Home.html">HOME</a></li>
+        <li><a href="Safety.html">SAFETY</a></li>
+        <li><a href="Destinations.html">DESTINATIONS</a></li>
+        <li><a href="Packing_list.html">PACKING LIST</a></li>
+        <li><a href="makingOfPlaneIt.html">MAKING OF PLANE-IT</a></li>
+        <li><a href="Our-Story.html">OUR STORY</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<!--The header ends here--> 
+
+	
+	
+	
+<!--This is the main container for the homepage, it containts its content-->
+<div id="Nmain"> 
+  
+  <!--The first part: contains some text, image and button-->
+    <!--The first text-->
+    <div id="Nfirst_text">
+      <h1>PREPARE FOR YOUR <br>
+        NEXT JOURNEY.... </h1>
+    </div>
+    
+    <!--The button div-->
+    <div id="Nnow_button"> <a href="Packing_list.html" id="Nlinke-adjust"><span id="Ntext-now">Now</span></a> </div>
+    
+    <!--The image div-->
+    <div id="Nanimation"> <img src="images/travelers.png" alt="a picture for a group of traveleres" id="NhomePic"/> </div>
+    
+	
+	
+	
+	
+	
+	
+	
+    <!--The middle part of the main container, it contains the destinations and a button-->
+    <div id="Nwhite_part">
+      <div id="Npart_two_text">
+        <h1>Available Destinations</h1>
+      </div>
+      
+      <!--A parent div for the locations is here, it includes 3 divs for each country and 1 div for titles-->
+      <div id="Nlocations"> 
+        
+        <!--Italy part-->
+        <div id="Nitaly"> <img src="images/italy2.png" alt="an image for attraction in Italy"> </div>
+        
+        <!--London part-->
+        <div id="Nlondon"> <img src="images/london2.png" alt="an image for attraction in London (London eye)"> </div>
+        
+        <!--Turkey part-->
+        <div id="Nturkey"> <img src="images/turkey2.png" alt="an image for attraction in Turkey"> </div>
+		  
+		  <!--The names part-->
+        <div id="Nnames">
+          <table id="Nnames_table">
+            <tr>
+              <td id="Nitaly-name">ITALY</td>
+              <td id="Nlondon-name">LONDON</td>
+              <td id="Nturkey-name">TURKEY</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+		
+		<!--This div is responsible for names' height-->
+      <div id="Npart2_text1"> </div>
+		
+		
+		<!--The last text in the middle part-->
+      <div id="Npart2_text2">
+        <p>We offer all information that you may need to plan a trip to Turkey, London, or Italy! <br>
+          For more information, you can visit our destinations page</p>
+      </div>
+      
+      <!--The purple button will appear here it leads to destinations page -->
+      <div id="Npurple_button">
+        <div id="Npurple"> <a href="Destinations.html" id="N-linkToDest">
+          <div id="Nhere_text">HERE</div>
+          </a> </div>
+      </div>
+    </div>
+    
+	  
+	
+	
+	
+	
+	
+	
+    <!--The last part of the homepage: it contains the form -->
+    <div id="Nlast"> <img src="images/map.png" id="Nlastp" alt="a picture forthe world map"> 
+		
+      <!--The input part of the form-->
+      <div id="Nallinput_new">
+        <div id="Nallinput_newtext">
+            <div id="Nform">
+             <label for="NFirst-Name">First Name</label>
+                <input type="text" id="NFirst-Name">
+            </div>
+            <div id="Nform">
+             <label for="NLast-Name">Last Name</label>
+             <input type="text" required="required" id="NLast-Name">
+         </div>
+         <div id="Nform">
+             <label for="NUser-Email">Email</label>
+             <input type="text" required="required" id="NUser-Email">
+         </div>
+         <div id="Nform">
+             <label for="NUser-Suggestion">Your country suggestion</label>
+             <input type="text" required="required" id="NUser-Suggestion">
+         </div>
+         <div id="Nform_button" required="required" onclick="users()">
+             <input type="button" value="Submit" id="NLast-Button" onclick="ReadInput()">
+         </div>
+        </div>
+        
+     </div>
+     <p id="N-errorMsg"></p>
+		<!--The text in the last part of the homepage will appear here-->
+      <div id="Nlast_text">
+        <div id="Nlast_h1">
+          <h1>Register Your Intrest!</h1>
+        </div>
+        <div id="Nlast_paragraph"> Are You interested in the information we are <br>
+          providing? <br>
+          Do you want to read more useful content for <br>
+          other countries? <br>
+          Don’t hesitate to mention the country you would <br>
+          like us to share information about so we can help <br>
+          you out with your planning process! </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--The footer starts here-->
+<div id="footer"> <img src="images/instaIcon.png" width="14" height="15" id="instagram_icon"/>
+  <h6>PLANEIT.BH</h6>
+	<br>
+	<table id="NuserTable" cellpadding="15">
+	<tr><td>Users Details:</td> <td id="firstName"> </td> <td id="lastName"> </td> <td id="email"> </td>  <td id="country"> </td> </tr>
+		
+	</table>
+</div>
+</body>
+</html>

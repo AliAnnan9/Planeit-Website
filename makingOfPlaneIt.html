@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <title>makingOfPlaneIt</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <link rel="website icon" type="png" href="images/travelling.png">
+    <script type="text/javascript" src="Project.js"></script>
+
+  </head>
+	
+	<body onload="printUserDetails()">
+	<!--The header starts here: It contains 2 divs for the logo and the navbar menu-->
+    <div id="Header"> 
+  
+  <!--This is the logo div-->
+  <div id="Logo"> <a href="home.html"> <img src="images/logo.png" width="136" height="79" alt="The blog logo"/> </a> </div>
+  
+  <!--This is the navbar div-->
+  <div id="Navbar">
+    <nav>
+      <ul>
+        <li><a href="Home.html">HOME</a></li>
+        <li><a href="Safety.html">SAFETY</a></li>
+        <li><a href="Destinations.html">DESTINATIONS</a></li>
+        <li><a href="Packing_list.html">PACKING LIST</a></li>
+        <li><a href="makingOfPlaneIt.html">MAKING OF PLANE-IT</a></li>
+        <li><a href="Our-Story.html">OUR STORY</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<!--The header ends here--> 
+
+		
+		<!--The main part of this page starts here, it contains multiple divs with images and some text-->
+<div id="LmainPart">
+	
+	<!--Header for the page-->
+	  <div id="Lheader">
+    <h1> How did this happen?</h1>
+  </div>
+	
+	<!--This is the first div-->
+  <div id="L-container1">
+		<div id="L-box1">
+			
+      <h4 id="L-header1">HTML CSS and JS justifications</h4>
+			<p id="L-text1">Instead of using the (form) tag, we used a normal div tag to create the form to 
+        prevent the form from refreshing the page with each submission. The alt attribute is being used in all
+         the images tags to ensure that if the images is taking too long to load, the alt attribute will provide a
+         short description for each image. In our JavaScript code, we provided error messages for each field to make the
+          website user-friendly. This way, the user will recognize the field he left empty immediately. To follow the best 
+          practice, we maintained a good amount of information on each page of our website. Besides that, we ensured
+           that the navigation and accessibility for all pages are easy (by using the navbar). Moreover, 
+           we chose a readable font so users don’t find it hard to read long content.
+
+			</p>
+	
+		</div>
+  </div>  
+	
+		<!--This is the second div-->
+    
+    <div id="L-container2">
+    <div id="L-box2">
+			
+      <h4 id="L-header2">Design and choice of colors justifications</h4>
+			<p id="L-text2">
+        We used a rounded rectangle shape to create the navbar for many reasons such as users do
+         not prefer seeing sharp corners (they are not classified as neat anymore). Also,
+          it is known that the human brain has a connection between safety and rounded corners.
+           We used colors like shades of blue since blue is connected to traveling. Besides that,
+            shades of pink, purple and yellow are being used to add joyful energy to the website
+             and make it more engaging to the user. We used a call for action button on the
+              homepage to attract users’ attention and to make our users engage with our website
+               immediately. Besides that, it is helpful to offer the user something to do.
+                On the packing list page, we created an interactive list. This way, we are
+                 attracting the user to use the website for a longer time, for a useful function.
+
+			</p>	
+</div>
+</div>
+<!--this is the third div-->
+	
+	
+<div id="L-box3">
+  <div id="L-Images1">
+    <img src="images/mockups11.png" class="L-Img">
+    <img src="images/mockups22.png" class="L-Img">
+  </div>
+  <div id="L-Images2">
+    <img src="images/mockups33.png" class="L-Img">
+    <img src="images/mockups44.png" class="L-Padding">
+  </div>
+  </div>
+	
+	
+	<!--The footer starts here-->
+  <div id="footer"> <img src="images/instaIcon.png" width="14" height="15" id="instagram_icon"/>
+    <h6>PLANEIT.BH</h6>
+    <br>
+    <table id="NuserTable" cellpadding="15">
+    <tr><td>Users Details:</td> <td id="firstName"> </td> <td id="lastName"> </td> <td id="email"> </td>  <td id="country"> </td> </tr>
+      
+    </table>
+  </div>
+	
+</body>
+</html>
